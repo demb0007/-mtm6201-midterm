@@ -497,8 +497,29 @@ p {
 
 /* Hero mobile */
 
+/* Hero mobile */
+
+.hero {
+    min-height: 500px;
+}
+
+.hero-image {
+    height: 500px;
+}
+
+.hero-content {
+    padding: 5rem 1rem 2rem;
+}
+
 .hero h1 {
     font-size: 2rem;
+    line-height: 1.1;
+    max-width: 100%;
+}
+
+.hero p {
+    font-size: 1rem;
+    max-width: 90%;
 }
 
 /* Welcome mobile */
