@@ -384,10 +384,10 @@ section {
 /* ---------- Testimonials ---------- */
 
 .testimonials {
-    background: #000;
-    color: #fff;
     width: 100%;
     padding: 6rem 0;
+    background: #000;
+    color: #fff;
 }
 
 .testimonials .wrapper {
@@ -405,44 +405,52 @@ section {
 
 .testimonial-card {
     position: relative;
+    min-height: 420px;
     overflow: hidden;
-    margin: 0;
 }
 
 .testimonial-card img {
+    position: absolute;
+    inset: 0;
     width: 100%;
-    height: 420px;
+    height: 100%;
     object-fit: cover;
-    display: block;
 }
 
 .testimonial-card::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top,
-        rgba(0,0,0,.8),
-        rgba(0,0,0,.1));
-}
-
-.testimonial-card p,
-.testimonial-card h3 {
-    position: absolute;
-    left: 1rem;
-    right: 1rem;
-    z-index: 2;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.1)
+    );
 }
 
 .testimonial-card p {
-    bottom: 4rem;
-    color: white;
+    position: absolute;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 5.5rem;
+    z-index: 2;
+    margin: 0;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.4;
 }
 
 .testimonial-card h3 {
+    position: absolute;
+    left: 1.5rem;
+    right: 1.5rem;
     bottom: 1.5rem;
+    z-index: 2;
+    margin: 0;
     color: #d69e3d;
+    font-size: 1.5rem;
+    line-height: 1.1;
 }
-
 .site-footer {
     background: #000;
     border-top: 1px solid #555;
