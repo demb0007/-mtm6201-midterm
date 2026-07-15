@@ -405,10 +405,6 @@ section {
 
 .testimonials > .wrapper > p:first-child {
     color: #d69e3d;
-}
-
-.testimonials > .wrapper > p:first-child {
-    color: #d69e3d;
     text-transform: uppercase;
     font-weight: bold;
 }
